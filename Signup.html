@@ -1,0 +1,375 @@
+<!doctype html>
+<html>
+<!--Jeody Shan Obra-->
+<!--May 23, 2017-->
+<title> Aloha Fitness </title>
+<head>
+<a name="top">
+<link rel="stylesheet" href="style.css">
+<a href="index.html">
+<img style="margin-left:8%" src="http://i.imgur.com/yYPiWHl.png" width="30%" height="20%" alt="Aloha Fitness LOGO" align="left" style="width:42px;height:42px;border:0;">
+</a>
+
+<script>
+function ValidateForm(gym)
+{
+
+
+ErrorText= "";
+
+		var fName = document.forms.gym.fName;
+	if(fName.value == "")
+	{
+	alert("Please enter your first name");
+	fName.focus();
+	return false;
+}
+	if(!isNaN(fName.value))
+	{
+	alert("Please Enter Only Characters in First Name");
+	fName.select();
+	return false;
+}
+	if ((fName.value.length < 1) || (fName.value.length > 15))
+	{
+	alert("Your character must be 5 to 15 Characters in First Name");
+	fName.select();
+	return false;
+}
+
+		var lName = document.forms.gym.lName;
+	if(lName.value == "")
+	{
+	alert("Please enter your last name");
+	lName.focus();
+	return false;
+}
+	if(!isNaN(lName.value))
+	{
+	alert("Please Enter Only Characters in Last Name");
+	lName.select();
+	return false;
+}
+	if ((lName.value.length < 1) || (lName.value.length > 10))
+	{
+	alert("Your character must be 5 to 10 Characters in Last Name");
+	lName.select();
+	return false;
+}
+
+	if (document.forms.gym.dateofbirth.value == "select")
+	{
+	alert("Please select your birth Month");
+	dateofbirth.select();
+	return false;
+}
+		var day = document.forms.gym.day;
+	if(document.forms.gym.day.value=="")
+	{
+	alert("Please enter your born date");
+	document.forms.gym.day.focus();
+	return false;
+}
+	if(isNaN(day.value))
+	{
+	alert("Please enter only numbers for day");
+	day.focus();
+	return false;
+}	
+
+		var year = document.forms.gym.year;
+	if(document.forms.gym.year.value=="")
+	{
+	alert("Please enter your born year");
+	document.forms.gym.year.focus();
+	return false;
+}
+	if(isNaN(year.value))
+	{
+	alert("Please enter only numbers for years");
+	year.focus();
+	return false;
+}	
+	if ((year.value.length < 2) || (year.value.length > 4))
+	{
+	alert("Your character must be 2 to 4 Numbers for the years.");
+	year.select();
+	return false;
+}
+
+	if((gym.gender[0].checked == false) && 
+	(gym.gender[1].checked == false) && 
+	(gym.gender[2].checked == false))
+{
+alert ("Please choose your Gender: Male, Female or Other");
+return false;
+}
+
+		var email = document.forms.gym.email;
+	if (email.value == "")
+
+	{
+	alert ("Please enter a valid e-mail address.");
+	email.focus();
+	return false;
+}
+	if(email.value.indexOf("@",0) < 0)
+	{
+	alert("Please enter a valid e-mail address.");
+	email.focus();
+	return false;
+}
+	if(email.value.indexOf(".",0) < 0)
+	{
+	alert("Please enter an e-mail address.");
+	email.focus()
+	return false;
+}
+
+	if(document.forms.gym.address.value=="")
+	{
+	alert("Please enter your full address");
+	document.forms.gym.address.focus();
+	return false;
+}
+
+		var phonenum = document.forms.gym.phonenum;
+	if(phonenum.value == "")
+	{
+	alert("Please enter the Contact Number");
+	phonenum.focus();
+	return false;
+}
+
+	if(isNaN(phonenum.value))
+	{
+	alert("Please enter only numbers");
+	phonenum.focus();
+	return false;
+}	
+
+	if ((phonenum.value.length < 5) || (phonenum.value.length > 12))
+	{
+	alert("Your Phone Number must be 5 to 12 numbers");
+	phonenum.select();
+	return;
+}
+
+	if (document.forms.gym.cardtype.value == "select")
+	{
+	alert("Please select a card type");
+	cardtype.select();
+	return false;
+}
+
+		var cardnum = document.forms.gym.cardnum;
+	if(cardnum.value == "")
+	{
+	alert("Please enter a Debit or Credit Card Number");
+	cardnum.focus();
+	return false;
+}
+	if(isNaN(cardnum.value))
+	{
+	alert("Please enter only numbers for Card Numbers");
+	cardnum.focus();
+	return false;
+}	
+	
+		var cvv = document.forms.gym.cvv;
+	if(cvv.value == "")
+	{
+	alert("Please enter the three digit code behind you Debit/Credit Card");
+	cvv.focus();
+	return false;
+}
+
+	if(isNaN(cvv.value))
+	{
+	alert("Please enter only numbers for for Secuirty Code or CVV");
+	cvv.focus();
+	return false;
+}	
+	
+	if ((document.forms.gym.member[0].checked == false) &&
+		(document.forms.gym.member[1].checked == false) &&
+		(document.forms.gym.member[2].checked == false) &&
+		(document.forms.gym.member[3].checked == false))
+	{
+	alert("Please choose a Membership");
+	member.select();
+	return false;
+}
+				
+	
+	
+if (ErrorText= "") { gym.submit() }
+
+
+
+
+}
+
+</script>
+
+
+</head>
+
+<style>
+
+div.transbox {  margin: 3%;   background-color: #ffffff;   border: 1px solid black;   opacity: 0.8;   filter: alpha(opacity=30); }
+div.transbox h4 {   margin: 2%;   font-weight: bold;   color: #000000; }
+a:hover {background-color: #cdf3f4;}
+form { text-align: center;  }
+h3 {font-family:'Hobo Std';}
+h4 {font-family:'Hobo Std';}
+h2 { margin-right: 20%;}
+h1 {font-family:'Hobo Std';}
+</style>
+
+<br>
+<br>
+<br>
+<h2 align=right>
+<a style="color:#f40216; text-decoration:none" href="index.html"> &nbsp;Home&nbsp;</a>
+<a style="color:#f40216; text-decoration:none" href="Services.html"> &nbsp;Services&nbsp;</a>
+<a style="color:#f40216; text-decoration:none" href="Signup.html"> &nbsp;SignUp&nbsp;</a>
+</h2>
+<hr>
+<br>
+
+
+<body>
+
+
+<form name=gym action="#" method=post>
+<h1> Sign Up & Be a Member!</h1>
+
+<h3 align=center> 
+<a style="color:#f40216; text-decoration:none" href="#info"> Personal Info </a> &#183;
+<a style="color:#f40216; text-decoration:none" href="#contact">Contact Info</a> &#183; 
+<a style="color:#f40216; text-decoration:none" href="#pay"> Payment </a> &#183;
+<a style="color:#f40216; text-decoration:none" href="#members"> Membership Type </a>  
+</h3>
+
+<div class="transbox">
+<fieldset>
+<a name="info">
+<legend> <h2> Personal&nbsp;Information </h2>
+
+<h3> First Name: </h3>
+<input type="text" size="25"  name="fName">
+
+<h3>Last Name: </h3>
+<input type="text" size="15"  name="lName">
+
+<h3>Date of Birth: </h3>
+<br/><select name="dateofbirth">
+<option value="select"> Month </option>
+<option value="jan"> January </option>
+<option value="feb"> February </option>
+<option value="march"> March </option>
+<option value="april"> April </option>
+<option value="may"> May </option>
+<option value="june"> June </option>
+<option value="july"> July </option>
+<option value="august"> August </option>
+<option value="sept"> September </option>
+<option value="oct"> October </option>
+<option value="nov"> November </option>
+<option value="dec"> December </option>
+</select>
+Day<input type="text" size="4" maxlength="2" name="day">
+Year<input type="text" size="6" maxlength="4" name="year">
+
+<h3> Gender: </h3>
+<input type="radio" name="gender" value="male"> Male
+<input type="radio" name="gender" value="female"> Female
+<input type="radio" name="gender" value="other"> Other
+</fieldset>
+</div>
+
+<br/>
+
+<div class="transbox">
+<fieldset>
+<a name="contact">
+<legend> <h2> Contact&nbsp;Information </h2>
+
+
+<h3> Email: </h3>
+<input type="text" size="25"  name="email">
+
+<h3> Address: </h3>
+<input type="text" size="40"  name="address">
+
+<h3> Phone Number: </h3>
+<input type="text" size="25" name="phonenum">
+</fieldset>
+</div>
+
+<div class="transbox">
+<fieldset>
+<a name="pay">
+<legend> <h2> Payment&nbsp;Method </h2>
+<h3>
+Card Type:
+<br>
+<img src="http://icons.iconarchive.com/icons/designbolts/credit-card-payment/256/Master-Card-icon.png" height="3%" width="4%"  alt="Mastercard image">
+<!--Master Card image is not mine, taken from google -->
+<img src="http://icons.iconarchive.com/icons/designbolts/credit-card-payment/256/American-Express-icon.png" height="3%" width="4%" alt="American Express image">
+<!--American Express Card image is not mine, taken from google -->
+<img src="http://www.free-icons-download.net/images/discover-card-icon-50052.png" height="3%" width="4%" alt="Discover image">
+<!--Discover Card image is not mine, taken from google -->
+<img src="http://icons.iconarchive.com/icons/designbolts/credit-card-payment/256/Visa-icon.png" height="3%" width="4%" alt="VISA image">
+<!--VISA Card image is not mine, taken from google -->
+</h3>
+<select name="cardtype">
+<option value="select"> Select </option>
+<option value="Master"> Master Card </option>
+<option value="American"> American Express </option>
+<option value="Discover"> Discover </option>
+<option value="VISA"> VISA </option></select>
+<br/><br/>
+
+<h3> Card Number: </h3>
+<input type="text" size="25" maxlength="16" name="cardnum">
+
+<h3> Secuirty or CVV Number:
+<br>
+<img src="https://image.flaticon.com/icons/svg/62/62936.svg" height="3%" width="4%" alt="cvv image"> </h3>
+<input type="password" size="5" maxlength="3" name="cvv">
+</fieldset>
+</div>
+
+<div class="transbox">
+<fieldset>
+<a name="members">
+<legend> <h2> Customer&nbsp;Membership </h2>
+
+<h3>Membership Type: </h3>
+<h4>Platinum ($30/Month)</h4><input type="checkbox" name="member" value="platinum"/> 
+<br/>
+<h4>Gold ($25/Month)</h4><input type="checkbox" name="member" value="gold"/> 
+<br/>
+<h4>Silver ($15/Month)</h4><input type="checkbox" name="member" value="silver"/> 
+<br/>
+<h4>Bronze ($10/Month)</h4><input type="checkbox" name="member" value="bronze"/> 
+<br/><br/>
+
+
+</fieldset>
+</div>
+
+<br>
+<br>
+<input type="button" name="submit" value="Submit" onClick="ValidateForm(gym)">
+<input type="reset" name="Reset">
+</form>
+
+</body>
+
+<hr style ="width:25%">
+<br>
+<a href="#top"> <h4 align=center> Back to top page </h4> </a> 
+</html>

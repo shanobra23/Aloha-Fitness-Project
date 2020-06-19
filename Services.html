@@ -1,0 +1,198 @@
+<!doctype html>
+<html>
+<!--Jeody Shan Obra-->
+<!--May 23, 2017-->
+<head>
+<title> Aloha Fitness </title>
+<a name="top">
+
+<script type="text/javascript">
+
+var imgArray = new Array(2);
+var index = 0;
+function cycle()
+{
+document.banner.src = imgArray[index].src;
+index++;
+if (index > 2)
+{
+index = 0;
+}
+setTimeout("cycle()", 3000);
+return;
+}
+function startup()
+{
+imgArray[0] = new Image
+imgArray[0].src ='http://sites.psu.edu/siowfa14/wp-content/uploads/sites/13467/2014/12/workout.jpeg';
+imgArray[1] = new Image
+imgArray[1].src ='https://usatcollege.files.wordpress.com/2014/08/459880391.jpg?w=1200';
+imgArray[2] = new Image
+imgArray[2].src ='https://cmga360fitness.files.wordpress.com/2016/01/dyc-workout-classes-01.jpg';
+
+cycle();
+return;
+}
+</script>
+
+
+<link rel="stylesheet" href="style.css">
+<a href="index.html">
+<img style="margin-left:8%" src="http://i.imgur.com/yYPiWHl.png" width="30%" height="20%" alt="Aloha Fitness LOGO" align="left" alt="Aloha Fitness picture" style="width:42px;height:42px;border:0;">
+<!--Aloha Fitness LOGO made by Photoshop, NOT AN OFFICAL FITNESS CENTER-->
+</a>
+</head>
+<style>
+
+div.transbox {  margin: 3%;   background-color: #ffffff;   border: 1px solid black;   opacity: 0.7;   filter: alpha(opacity=30); }
+div.transbox h4 {   margin: 2%;   font-weight: bold;   color: #000000; }
+h2 { margin-right: 20%;}
+a:hover {background-color: #cdf3f4;}
+
+</style>
+<br>
+<br>
+<br>
+<h2 align=right>
+<a style="color:#f40216; text-decoration:none" name="Home"; href="index.html"> &nbsp;Home&nbsp;</a>
+<a style="color:#f40216; text-decoration:none" href="Services.html"> &nbsp;Services&nbsp;</a>
+<a style="color:#f40216; text-decoration:none" href="Signup.html"> &nbsp;SignUp&nbsp;</a>
+</h2>
+<hr>
+<br>
+
+<h3 align=center> 
+<a style="color:#f40216; text-decoration:none" href="#trainer"> Personal Trainer </a> &#183;
+<a style="color:#f40216; text-decoration:none" href="#view">The View</a> &#183; 
+<a style="color:#f40216; text-decoration:none" href="#member"> Membership </a> &#183;
+<a style="color:#f40216; text-decoration:none" href="#yoga"> Yoga </a>  
+</h3>
+
+<body onLoad="startup()">
+<div align="center">
+<img name="banner" height=500 width=800 src="http://sites.psu.edu/siowfa14/wp-content/uploads/sites/13467/2014/12/workout.jpeg" alt="cvv image">
+</div>
+
+<br>
+<hr style ="width:35%">
+<br>
+
+<a name="trainer">
+<table style="margin-right:50px; margin-left:70px; background: #eff5ff;" >
+<tr>
+<td>
+<img src="http://nccvtadulteducation.com/wp-content/uploads/2014/08/Personal-Trainer-Photo.png" width="500" height="350">
+</td>
+<td align="center">
+<h3>
+Need A Personal Trainer? No Problem
+</h3>
+<br>
+<h3>
+If you are new or just need help with your workout. Our personal trainers
+will give you the most satisfying workout. Together you will experience
+balanced workout with not just your physical workout, but also your
+mental workout. To provide you positivity and build your confidence in your life.
+</h3>
+</td>
+</tr>
+</table>
+
+<br>
+
+<a name="view">
+<table style="margin-right:70px; margin-left:40px; background: #eff5ff;" >
+<tr>
+<td align="center">
+<h3>
+Workout & Enjoy the View
+</h3>
+<br>
+<h3>
+Here in Aloha Fitness, we dont have dull walls. We have breath taking views of
+Waikiki Beach. So you can workout and take in the view.
+</h3>
+</td>
+<td>
+<img src="http://www.plumeriapress.com/wp-content/uploads/2015/01/KAN_6687-Version-2-1024x457.jpg" width="600" height="350">
+</td>
+</tr>
+</table>
+
+<br>
+
+
+<a name="member">
+<table style="margin-right:50px; margin-left:70px; background: #eff5ff;" >
+<tr>
+<td>
+<img src="http://runningmagazine.ca/wp-content/uploads/2013/07/164928671.jpg" width="600" height="350">
+</td>
+<td align="center">
+<h3>
+Run with Membership
+</h3>
+<br>
+<h3>
+Get the most of your workout with these Membership Benefits!
+</h3>
+<h3>
+Bronze:
+<br>
+Bronze members access to our award winning gym. You are able to use our high quality and efficient equipment.
+<br>
+<br>
+Silver:
+<br>
+Silver members access gym & yoga facilities. With free refreshments,just in case. 
+<br>
+<br>
+Gold:
+<br>
+Gold members access to our gym, yoga, refreshments, and private group workouts if you get lonely. 
+<br>
+<br>
+Platinum:
+<br>
+ Platinum members have access to everything in our fitness center. But we'll add a personal trainer free of charge.
+</h3>
+
+</td>
+</tr>
+</table>
+
+<br>
+
+<a name="yoga">
+<table style="margin-right:70px; margin-left:40px; background: #eff5ff;" >
+<tr>
+<td align="center">
+<h3>
+Meditate & Focus
+</h3>
+<br>
+<h3>
+Mental Fitness is just important as Physical Fitness. Our Yoga 
+program offers silent rooms and well-trained yoga instructors. To
+let you meditate and relax.
+</h3>
+</td>
+<td>
+<img src="https://www.goodlifehealthclubs.com.au/~/media/images/class/2017/active_core_class_page_tile_800x400.jpg" width="600" height="350">
+</td>
+</tr>
+</table>
+</body>
+<br>
+<hr style ="width:35%">
+<br>
+<a href="#top"> <h4 align=center> Back to top page </h4> </a> 
+<h4 align=center>
+Email: 
+<a href="shanobra23@gmail.com">shanobra23@gmail.com</a>
+</h4>
+</html>
+
+
+
+
